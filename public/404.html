@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // GitHub Pages SPA redirect: forward path to index.html via sessionStorage
+      var path = window.location.pathname.replace('/golondrina-adventures', '') || '/';
+      sessionStorage.setItem('spa_redirect', path + window.location.search);
+      window.location.replace('/golondrina-adventures/');
+    </script>
+  </head>
+  <body></body>
+</html>
