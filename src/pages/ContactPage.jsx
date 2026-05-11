@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import SEO from '../components/SEO'
 import styles from './ContactPage.module.css'
 
 export default function ContactPage() {
@@ -45,6 +46,11 @@ export default function ContactPage() {
 
   return (
     <main className={styles.main} id="main-content">
+      <SEO
+        title="Contact"
+        description="Get in touch with Golondrina Adventures to book a Costa Rica tour, ask about custom itineraries, or plan your group trip."
+        url="/contact"
+      />
       <div className={`container ${styles.content}`}>
         <header className={styles.header}>
           <h1 className={styles.title}>Get in Touch</h1>

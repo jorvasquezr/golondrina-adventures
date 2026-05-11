@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import TourCard from '../components/TourCard'
+import SEO from '../components/SEO'
 import tours from '../data/tours'
 import styles from './ToursPage.module.css'
 
@@ -8,6 +9,12 @@ export default function ToursPage() {
 
   return (
     <main className={styles.main} id="main-content">
+      <SEO
+        title="Costa Rica Tours"
+        description="Handcrafted eco-tours across Costa Rica — volcano hikes, cloud forest, snorkeling, white-water rafting, sea turtle nights, and coffee farm experiences with expert bilingual guides."
+        url="/tours"
+        image="/images/tours/monteverde-cloud-forest.jpg"
+      />
       <div className="container">
         <header className={styles.header}>
           <h1 className={styles.title}>{t('title')}</h1>

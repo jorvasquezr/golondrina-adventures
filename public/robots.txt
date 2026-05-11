@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jorvasquezr.github.io/golondrina-adventures/sitemap.xml

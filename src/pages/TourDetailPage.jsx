@@ -1,5 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import SEO from '../components/SEO'
+import { assetUrl } from '../utils/assetUrl'
 import tours from '../data/tours'
 import styles from './TourDetailPage.module.css'
 
@@ -10,12 +12,48 @@ export default function TourDetailPage() {
 
   if (!tour) return <Navigate to="/tours" replace />
 
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'TouristTrip',
+    name: tour.title,
+    description: tour.fullDescription,
+    image: `https://jorvasquezr.github.io/golondrina-adventures${tour.image.src}`,
+    touristType: tour.category,
+    itinerary: {
+      '@type': 'ItemList',
+      itemListElement: tour.itinerary.map((step, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: step,
+      })),
+    },
+    offers: {
+      '@type': 'Offer',
+      price: tour.pricePerPerson,
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: `https://jorvasquezr.github.io/golondrina-adventures/tours/${tour.slug}`,
+    },
+    provider: {
+      '@type': 'TravelAgency',
+      name: 'Golondrina Adventures',
+      url: 'https://jorvasquezr.github.io/golondrina-adventures',
+    },
+  }
+
   return (
     <main className={styles.main} id="main-content">
+      <SEO
+        title={tour.title}
+        description={tour.shortDescription}
+        image={tour.image.src}
+        url={`/tours/${tour.slug}`}
+        structuredData={structuredData}
+      />
       {/* Hero */}
       <div className={styles.hero}>
         <img
-          src={tour.image.src}
+          src={assetUrl(tour.image.src)}
           alt={tour.image.alt}
           className={styles.heroImage}
           width="1200"

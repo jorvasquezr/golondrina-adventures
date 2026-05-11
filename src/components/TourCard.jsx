@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { assetUrl } from '../utils/assetUrl'
 import styles from './TourCard.module.css'
 
 function difficultyClass(difficulty) {
@@ -21,7 +22,7 @@ export default function TourCard({ tour }) {
         tabIndex={-1}
       >
         <img
-          src={tour.image.src}
+          src={assetUrl(tour.image.src)}
           alt={tour.image.alt}
           className={styles.image}
           loading="lazy"

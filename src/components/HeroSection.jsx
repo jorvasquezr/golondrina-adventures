@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
+import { assetUrl } from '../utils/assetUrl'
 import styles from './HeroSection.module.css'
 
 export default function HeroSection({ title, subtitle, ctaLabel, ctaTo, imageSrc, imageAlt }) {
   return (
     <section
       className={styles.hero}
-      style={imageSrc ? { backgroundImage: `url(${imageSrc})` } : undefined}
+      style={imageSrc ? { backgroundImage: `url(${assetUrl(imageSrc)})` } : undefined}
       role="img"
       aria-label={imageAlt || title}
     >

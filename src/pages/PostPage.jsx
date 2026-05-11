@@ -1,5 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import SEO from '../components/SEO'
+import { assetUrl } from '../utils/assetUrl'
 import posts from '../data/posts'
 import styles from './PostPage.module.css'
 
@@ -16,12 +18,35 @@ export default function PostPage() {
 
   if (!post) return <Navigate to="/blog" replace />
 
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    image: `https://jorvasquezr.github.io/golondrina-adventures${post.image.src}`,
+    author: { '@type': 'Organization', name: post.author },
+    datePublished: post.date,
+    publisher: {
+      '@type': 'Organization',
+      name: 'Golondrina Adventures',
+      url: 'https://jorvasquezr.github.io/golondrina-adventures',
+    },
+  }
+
   return (
     <main className={styles.main} id="main-content">
+      <SEO
+        title={post.title}
+        description={post.excerpt}
+        image={post.image.src}
+        url={`/blog/${post.slug}`}
+        type="article"
+        structuredData={structuredData}
+      />
       <article>
         <div className={styles.hero}>
           <img
-            src={post.image.src}
+            src={assetUrl(post.image.src)}
             alt={post.image.alt}
             className={styles.heroImage}
             width="1200"

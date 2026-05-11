@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { assetUrl } from '../utils/assetUrl'
 import styles from './PostCard.module.css'
 
 function formatDate(dateStr) {
@@ -20,7 +21,7 @@ export default function PostCard({ post }) {
         tabIndex={-1}
       >
         <img
-          src={post.image.src}
+          src={assetUrl(post.image.src)}
           alt={post.image.alt}
           className={styles.image}
           loading="lazy"

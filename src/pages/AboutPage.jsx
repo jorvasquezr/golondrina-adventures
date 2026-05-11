@@ -1,14 +1,22 @@
+import SEO from '../components/SEO'
+import { assetUrl } from '../utils/assetUrl'
 import styles from './AboutPage.module.css'
 
 export default function AboutPage() {
   return (
     <main className={styles.main} id="main-content">
+      <SEO
+        title="About Us"
+        description="Golondrina Adventures is a Costa Rica eco-tourism platform led by bilingual naturalist guides. Learn about our commitment to slow travel, local communities, and conservation."
+        url="/about"
+        image="/images/tours/monteverde-cloud-forest.jpg"
+      />
       <div className={`container ${styles.content}`}>
         <h1 className={styles.title}>About Golondrina Adventures</h1>
 
         <div className={styles.hero}>
           <img
-            src="/images/tours/monteverde-cloud-forest.jpg"
+            src={assetUrl('/images/tours/monteverde-cloud-forest.jpg')}
             alt="Misty cloud forest in Monteverde, Costa Rica — the kind of landscape that inspired Golondrina Adventures"
             className={styles.heroImage}
             width="1200"

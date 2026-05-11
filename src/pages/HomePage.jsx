@@ -3,9 +3,20 @@ import { useTranslation } from 'react-i18next'
 import HeroSection from '../components/HeroSection'
 import PostCard from '../components/PostCard'
 import TourCard from '../components/TourCard'
+import SEO from '../components/SEO'
 import posts from '../data/posts'
 import tours from '../data/tours'
 import styles from './HomePage.module.css'
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'TravelAgency',
+  name: 'Golondrina Adventures',
+  description: 'Authentic travel stories and handcrafted eco-tours across Costa Rica.',
+  url: 'https://jorvasquezr.github.io/golondrina-adventures',
+  areaServed: { '@type': 'Country', name: 'Costa Rica' },
+  sameAs: ['https://github.com/jorvasquezr/golondrina-adventures'],
+}
 
 export default function HomePage() {
   const { t } = useTranslation('common')
@@ -14,6 +25,12 @@ export default function HomePage() {
 
   return (
     <>
+      <SEO
+        description="Authentic travel stories and handcrafted eco-tours across Costa Rica. Explore volcanoes, cloud forests, coral reefs, sea turtles, and coffee farms with expert bilingual guides."
+        image="/images/tours/arenal-volcano-hike.jpg"
+        url="/"
+        structuredData={structuredData}
+      />
       <HeroSection
         title="Discover Costa Rica's Wild Heart"
         subtitle="Authentic travel stories and handcrafted eco-tours across one of the world's most biodiverse countries."
