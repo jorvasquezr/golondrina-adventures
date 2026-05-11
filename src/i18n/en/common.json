@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "tours": "Tours",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
+  },
+  "footer": {
+    "tagline": "Discover Costa Rica's wild heart.",
+    "links": "Quick Links",
+    "legal": "© {{year}} Golondrina Adventures. All rights reserved.",
+    "instagram": "Follow us on Instagram",
+    "facebook": "Follow us on Facebook"
+  },
+  "theme": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español"
+  },
+  "cta": {
+    "readMore": "Read more",
+    "viewDetails": "View details",
+    "bookNow": "Book now",
+    "backToList": "Back to list",
+    "contactUs": "Contact us"
+  },
+  "meta": {
+    "loading": "Loading…",
+    "notFound": "Page not found"
+  }
+}

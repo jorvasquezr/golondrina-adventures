@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "blog": "Blog",
+    "tours": "Tours",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "openMenu": "Abrir menú de navegación",
+    "closeMenu": "Cerrar menú de navegación"
+  },
+  "footer": {
+    "tagline": "Descubre el corazón salvaje de Costa Rica.",
+    "links": "Enlaces rápidos",
+    "legal": "© {{year}} Golondrina Adventures. Todos los derechos reservados.",
+    "instagram": "Síguenos en Instagram",
+    "facebook": "Síguenos en Facebook"
+  },
+  "theme": {
+    "switchToLight": "Cambiar a modo claro",
+    "switchToDark": "Cambiar a modo oscuro"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español"
+  },
+  "cta": {
+    "readMore": "Leer más",
+    "viewDetails": "Ver detalles",
+    "bookNow": "Reservar ahora",
+    "backToList": "Volver a la lista",
+    "contactUs": "Contáctanos"
+  },
+  "meta": {
+    "loading": "Cargando…",
+    "notFound": "Página no encontrada"
+  }
+}

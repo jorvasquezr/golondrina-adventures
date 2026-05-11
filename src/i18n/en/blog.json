@@ -1,0 +1,12 @@
+{
+  "title": "Travel Blog",
+  "subtitle": "Stories, guides, and inspiration from Costa Rica",
+  "by": "By {{author}}",
+  "publishedOn": "{{date}}",
+  "readTime": "{{min}} min read",
+  "allPosts": "All posts",
+  "featuredPosts": "Featured stories",
+  "noPostsFound": "No posts found.",
+  "backToBlog": "← Back to blog",
+  "ariaPostCard": "Read article: {{title}}"
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" role="img" aria-label="Golondrina Adventures logo">
+  <title>Golondrina Adventures</title>
+
+  <!-- Upper wing — sweeps back and up -->
+  <path d="M 148 74 C 128 56 92 36 48 20 C 84 44 122 63 146 78 Z" fill="#40916c"/>
+
+  <!-- Lower wing — sweeps back and down -->
+  <path d="M 148 86 C 128 104 92 124 48 140 C 84 116 122 97 146 82 Z" fill="#40916c"/>
+
+  <!-- Tail upper fork -->
+  <path d="M 124 77 C 98 66 74 50 54 36 C 76 54 102 69 124 80 Z" fill="#1b4332"/>
+
+  <!-- Tail lower fork -->
+  <path d="M 124 83 C 98 94 74 110 54 124 C 76 106 102 91 124 80 Z" fill="#1b4332"/>
+
+  <!-- Body -->
+  <ellipse cx="152" cy="80" rx="30" ry="11" fill="#2d6a4f"/>
+
+  <!-- Head -->
+  <ellipse cx="181" cy="77" rx="12" ry="10" fill="#2d6a4f"/>
+
+  <!-- Beak -->
+  <polygon points="192,78 206,80 192,82" fill="#2d6a4f"/>
+
+  <!-- Eye -->
+  <circle cx="185" cy="74" r="3" fill="#081c15"/>
+  <circle cx="186" cy="73" r="1" fill="#d8f3dc"/>
+
+  <!-- Chest highlight -->
+  <ellipse cx="156" cy="83" rx="17" ry="6" fill="#d8f3dc" opacity="0.35"/>
+
+  <!-- Logotype -->
+  <text x="150" y="158" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#1b4332" text-anchor="middle" font-weight="bold">Golondrina</text>
+  <text x="150" y="178" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#52b788" text-anchor="middle" letter-spacing="5">ADVENTURES</text>
+</svg>

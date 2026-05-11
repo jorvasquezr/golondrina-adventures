@@ -1,0 +1,12 @@
+{
+  "title": "Blog de Viajes",
+  "subtitle": "Historias, guías e inspiración desde Costa Rica",
+  "by": "Por {{author}}",
+  "publishedOn": "{{date}}",
+  "readTime": "{{min}} min de lectura",
+  "allPosts": "Todas las publicaciones",
+  "featuredPosts": "Historias destacadas",
+  "noPostsFound": "No se encontraron publicaciones.",
+  "backToBlog": "← Volver al blog",
+  "ariaPostCard": "Leer artículo: {{title}}"
+}
