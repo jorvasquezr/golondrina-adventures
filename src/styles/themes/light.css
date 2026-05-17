@@ -1,29 +1,41 @@
 :root {
-  --color-bg: #f8f7f4;
-  --color-bg-alt: #ffffff;
-  --color-surface: #ffffff;
-  --color-surface-raised: #f0ede8;
-  --color-border: #e2ddd6;
+  --color-bg: #F7F5E8;
+  --color-bg-alt: #EBD7B8;
+  --color-surface: #FFFFFF;
+  --color-surface-raised: #E1D6A7;
+  --color-border: #D4C5A0;
 
-  --color-text: #1a1a1a;
-  --color-text-muted: #5a5750;
-  --color-text-subtle: #8a8278;
+  --color-text: #6D483C;
+  --color-text-muted: #9E7A6E;
+  --color-text-subtle: #BCA89F;
 
-  --color-primary: #2d6a4f;
-  --color-primary-hover: #1b4332;
-  --color-primary-light: #d8f3dc;
+  --color-primary: #A74348;
+  --color-primary-hover: #8C4838;
+  --color-primary-light: #F5DADA;
 
-  --color-accent: #40916c;
-  --color-accent-hover: #2d6a4f;
+  --color-accent: #62723C;
+  --color-accent-hover: #4D5A2E;
 
-  --color-badge-easy: #d8f3dc;
-  --color-badge-easy-text: #1b4332;
-  --color-badge-moderate: #fff3cd;
-  --color-badge-moderate-text: #7d4e00;
-  --color-badge-challenging: #fde8e8;
-  --color-badge-challenging-text: #7f1d1d;
+  --color-navbar-bg: #6D483C;
+  --color-navbar-text: #F7F5E8;
+  --color-navbar-text-muted: rgba(247, 245, 232, 0.72);
+  --color-navbar-hover-bg: rgba(247, 245, 232, 0.12);
 
-  --shadow-sm: 0 1px 3px rgba(0,0,0,.08);
-  --shadow-md: 0 4px 12px rgba(0,0,0,.10);
-  --shadow-lg: 0 8px 24px rgba(0,0,0,.12);
+  --color-card-bg: #DAC18B;
+  --color-card-alt: #E1D6A7;
+
+  --color-detail-olive: #62723C;
+  --color-detail-mustard: #837D2C;
+  --color-detail-blue: #6E7FBE;
+
+  --color-badge-easy: #D4E0B8;
+  --color-badge-easy-text: #3D4A22;
+  --color-badge-moderate: #EDE6C0;
+  --color-badge-moderate-text: #5C5620;
+  --color-badge-challenging: #F5DADA;
+  --color-badge-challenging-text: #7A2D2D;
+
+  --shadow-sm: 0 1px 3px rgba(109, 72, 60, 0.08);
+  --shadow-md: 0 4px 12px rgba(109, 72, 60, 0.12);
+  --shadow-lg: 0 8px 24px rgba(109, 72, 60, 0.16);
 }

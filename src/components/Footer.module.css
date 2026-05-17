@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--color-surface);
-  border-top: 1px solid var(--color-border);
+  background-color: var(--color-navbar-bg);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   margin-top: auto;
 }
 
@@ -25,12 +25,12 @@
   font-family: 'Georgia', serif;
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--color-primary);
+  color: var(--color-navbar-text);
   margin-bottom: 0.5rem;
 }
 
 .tagline {
-  color: var(--color-text-muted);
+  color: var(--color-navbar-text-muted);
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -41,7 +41,7 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-text-subtle);
+  color: var(--color-navbar-text-muted);
   margin-bottom: 0.75rem;
 }
 
@@ -53,14 +53,14 @@
 }
 
 .links a {
-  color: var(--color-text-muted);
+  color: var(--color-navbar-text-muted);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.15s;
 }
 
 .links a:hover {
-  color: var(--color-primary);
+  color: var(--color-navbar-text);
 }
 
 .social {
@@ -76,22 +76,22 @@
   width: 44px;
   height: 44px;
   border-radius: 8px;
-  color: var(--color-text-muted);
+  color: var(--color-navbar-text-muted);
   text-decoration: none;
   transition: color 0.15s, background-color 0.15s;
 }
 
 .socialLink:hover {
-  color: var(--color-primary);
-  background-color: var(--color-primary-light);
+  color: var(--color-navbar-text);
+  background-color: var(--color-navbar-hover-bg);
 }
 
 .legal {
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   padding: 1rem 1.25rem;
   text-align: center;
   font-size: 0.8rem;
-  color: var(--color-text-subtle);
+  color: var(--color-navbar-text-muted);
   font-family: sans-serif;
 }
 
